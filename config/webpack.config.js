@@ -10,7 +10,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.scss$/, loader: 'style!css!sass' },
+      { test: /\.less$/, loader: 'style!css!less' },
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
       { test: /\.svg$/, loader: 'url-loader' },
       { test: /\.png$/, loader: 'url-loader' },
