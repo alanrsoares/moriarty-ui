@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "description": "UI for moriarty",
   "main": "index.js",
-  "dependencies": {
-    "flummox": "^3.5.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "flummox": "^3.5.1",
     "material-ui": "^0.7.3",
+    "object-assign": "^2.0.0",
     "react": "^0.13.1",
-    "react-tap-event-plugin": "^0.1.6"
+    "react-tap-event-plugin": "^0.1.6",
+    "webpack": "^1.8.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
