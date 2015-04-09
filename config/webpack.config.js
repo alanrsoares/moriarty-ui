@@ -1,4 +1,4 @@
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ETP = require("extract-text-webpack-plugin");
 
 module.exports = {
   context: __dirname + '/../src',
@@ -10,15 +10,15 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.less$/, loader: 'style!css!less' },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
+      { test: /\.less$/, loader: ETP.extract('style-loader', 'css-loader!less-loader') },
+      { test: /\.css$/, loader: ETP.extract('style-loader', 'css-loader') },
       { test: /\.svg$/, loader: 'url-loader' },
       { test: /\.png$/, loader: 'url-loader' },
       { test: /\.ls$/, loader: 'livescript-loader' }
     ]
   },
   plugins: [
-    new ExtractTextPlugin("style.css", {
+    new ETP("style.css", {
       allChunks: true
     })
   ],

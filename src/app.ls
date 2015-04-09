@@ -1,7 +1,11 @@
 require! {
   react
-  elementary-ls: $
+  elementary: $
+  'react-tap-event-plugin'
   './components/main'
+  './less/app.less'
 }
 
-react.render $(main), document.query-selector '#app'
+react-tap-event-plugin!
+
+react.render $(main), document.body

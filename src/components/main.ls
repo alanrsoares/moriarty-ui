@@ -1,7 +1,11 @@
 require! {
-  elementary-ls: $
+  elementary: $
+  './app-header'
 }
 
-modules.exports = $.component do
+module.exports = $.component do
   render: ->
-    $.h1 'Hello World'
+    $.div class-name: 'mui-app-canvas mui-predefined-layout-1',
+      $ app-header
+      $.div class-name: 'mui-app-content-canvas',
+        'Content'
