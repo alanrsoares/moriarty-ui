@@ -1,11 +1,13 @@
 require! {
   elementary: $
   './app-header'
+  './splash'
+  './content'
 }
 
 module.exports = $.component do
   render: ->
-    $.div class-name: 'mui-app-canvas mui-predefined-layout-1',
+    $.div class-name: 'mui-app-canvas',
       $ app-header
-      $.div class-name: 'mui-app-content-canvas',
-        'Content'
+      $ splash
+      $ content

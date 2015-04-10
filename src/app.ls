@@ -3,7 +3,7 @@ require! {
   elementary: $
   'react-tap-event-plugin'
   './components/main'
-  './less/app.less'
+  './styles/css/landing.css'
 }
 
 react-tap-event-plugin!
